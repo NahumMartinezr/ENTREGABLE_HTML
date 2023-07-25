@@ -1,0 +1,354 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.container {
+  max-width: 100%;  
+  margin: 0 auto;  
+  padding: 20px;  
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: #ff8000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 30px;  
+  margin-right: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-buttons-container {
+  position: absolute;
+  top: 2%;  
+  right: 2%;  
+}
+
+
+.user-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currency-button {
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.user-buttons button.highlight {
+  background-color: #ff8000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language-button img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.main-text {
+  text-align: left;
+  color: #fff;
+  padding: 100px;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.main-text h2 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.main-text p {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.main.text p:last-child{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  background-image: url('images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 605px;
+  flex-shrink: 0;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: transparent;
+  position: relative;
+  top: 140px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.search h2 {
+  margin-top: 0;
+}
+
+.search form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 10px;
+}
+
+.search button[type="submit"] {
+  background-color: #ff8000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.register {
+  background-color: #FF8000;
+  padding: 20px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.register h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register input,
+.register select,
+.register button,
+.register label {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.register button[type="submit"] {
+  background-color: #ffffff;
+  color: #ff8000;
+  cursor: pointer;
+  padding: 15px 30px; 
+  font-size: 20px; 
+  margin-top: 20px; 
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: flex-start;  
+  margin-top: 200px;  
+  margin-left: 20px;
+  width: 100%;
+}
+
+.offer {
+  position: relative;
+  flex-basis: 22%;  
+  margin-bottom: 20px;  
+  margin-right: 20px;
+}
+
+.offer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.offer-content {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #000000;
+  background-color: transparent;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.offer-content h3,
+.offer-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.offer-content button{
+  background-color: #ff8000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+ 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.modal form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal form button[type="submit"] {
+  background-color: #ff8000;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal form button[type="submit"]:hover {
+  background-color: #ff9900;
+}
+
+.modal-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.modal-content p:last-child {
+  margin-bottom: 0;
+}

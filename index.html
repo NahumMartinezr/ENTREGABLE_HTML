@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Chipicui.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo de la página">
+    </div>
+  </header>
+  
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Alojamientos</a></li>
+        <li><a href="#" class="active">Transportes</a></li>
+        <li><a href="#" class="active">Lugares Turísticos</a></li>
+      </ul>
+    </nav>
+    <section class="user-buttons-container">
+      <section class="user-buttons">
+          <button class="currency-button">UYU</button>
+          <div class="language-button">
+              <img src="images/FlagUruguay.png" alt="Uruguay Flag">
+          </div>
+          <button class="currency-button">Registra tu Alojamiento</button>
+          <button class="highlight" id="loginButton">Iniciar Sesión</button>
+          <button class="highlight">Hazte una Cuenta</button>
+      </section>
+  </section>
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+       
+      <h2>Inicio de Sesión</h2>
+      <form id="loginForm">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" placeholder="Nombre de usuario" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+      </header>
+
+<section class="content">
+  <section class="main-text">
+      <h2>Crea tu cuenta y ahorra</h2>
+      <p>Ahorra un 15% en nuestros alojamientos</p>
+      <p>Busca el verificado de Chipicui.</p>
+  </section>
+
+    <section class="search">
+      <h2></h2>
+      <form>
+        <input type="text" placeholder="¿A dónde vas?">
+        <input type="date" placeholder="Fecha de entrada">
+        <input type="date" placeholder="Fecha de salida">
+        <button type="submit">Buscar</button>
+      </form>
+  </section>
+
+  <section class="register">
+    <h2></h2>
+    <form id="registrationForm">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+  
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" placeholder="Apellido" required>
+  
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+  
+      <label for="telefono">Número de teléfono</label>
+      <div class="phone-input">
+        <select class="country-select">
+          <option value="" disabled selected>Seleccione su país</option>
+          <option value="UY">Uruguay</option>
+          <option value="ARG">Argentina</option>
+          <option value="US"> Estados Unidos</option>
+          <option value="MX">México</option>
+        </select>
+        <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+      </div>
+  
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Contraseña" required>
+  
+      <label for="confirm-password">Repetir Contraseña</label>
+      <input type="password" id="confirm-password" placeholder="Repetir Contraseña" required>
+  
+      <label>
+        <input type="checkbox" required>
+        Acepto los términos y condiciones
+      </label>
+
+       <button type="submit">Registrarse</button>
+  </form>  
+</section>
+
+<section class="offers">
+    <div class="offer">
+      <div class="offer-box">
+        <img src="images/IMAGEN 1.png" alt="Oferta 1">
+        <div class="offer-content">
+          <h3>Escápate una temporada</h3>
+          <p>Disfruta con  amigos   en las estancias mensuales de Chipicui.com</p>
+          <button>Ver oferta</button>
+        </div>
+      </div>
+    </div>
+    <div class="offer">
+      <div class="offer-box">
+        <img src="images/IMAGEN 2.png" alt="Oferta 2">
+        <div class="offer-content">
+          <h3>Disfruta de la Naturaleza</h3>
+          <p>Ahorra un 10% o más en alojamientos a las afueras de la ciudad para relajarte o vivir aventuras.</p>
+          <button>Ver oferta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="script.js"></script>  
+</div>
+</body>
+</html>
